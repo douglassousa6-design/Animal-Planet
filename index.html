@@ -1,39 +1,103 @@
 <!DOCTYPE html>
+<!-- Informa ao navegador que o documento utiliza HTML5 -->
+
 <html lang="pt-BR">
+<!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+
 <head>
+    <!-- Contém configurações e informações da página -->
+
     <meta charset="UTF-8">
+    <!-- Define a codificação dos caracteres para permitir acentos e caracteres especiais -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar ao tamanho da tela de diferentes dispositivos -->
+
     <title>Animal Planet</title>
+    <!-- Define o título que aparece na aba do navegador -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Conecta o arquivo HTML ao arquivo de estilos CSS -->
 </head>
+
 <body>
+    <!-- Contém todo o conteúdo que será exibido na página -->
 
     <header>
+        <!-- Representa o cabeçalho da página -->
+
         <div class="logo">
+            <!-- Agrupa a imagem da logo -->
+
             <a href="#">
-                <img src="./assets/logo-animal-planet.png" alt="Logo do Animal Planet">            
+                <!-- Cria um link para a logo -->
+
+                <img src="./assets/logo-animal-planet.png" alt="Logo do Animal Planet">
+                <!-- Exibe a imagem da logo -->
+                <!-- src indica o caminho da imagem -->
+                <!-- alt fornece uma descrição alternativa da imagem -->
+
             </a>
         </div>
 
         <div class="nome-projeto">
-            <h1 style="color:#0E376D;">Animal <span style="color:#16A34A; ;">Planet</span></h1>
+            <!-- Agrupa o nome do projeto -->
+
+            <h1 style="color:#0E376D;">
+                <!-- h1 representa o título principal da página -->
+                <!-- style permite aplicar CSS diretamente no elemento -->
+                <!-- color define a cor azul do texto -->
+
+                Animal
+
+                <span style="color:#16A34A;">
+                    <!-- span permite aplicar uma configuração específica somente a uma parte do texto -->
+                    <!-- Aqui a palavra Planet recebe a cor verde -->
+
+                    Planet
+                </span>
+            </h1>
         </div>
 
         <nav>
+            <!-- Representa a área de navegação do site -->
+
             <ul>
+                <!-- Cria uma lista não ordenada para o menu -->
+
                 <li><a href="#">Início</a></li>
+                <!-- li representa um item da lista -->
+                <!-- a cria o link e href define o destino -->
+
                 <li><a href="#">Recursos</a></li>
+                <!-- Item do menu Recursos -->
+
                 <li><a href="#">Sobre</a></li>
+                <!-- Item do menu Sobre -->
+
                 <li><a href="#">Benefícios</a></li>
+                <!-- Item do menu Benefícios -->
+
                 <li><a href="#">Planos</a></li>
+                <!-- Item do menu Planos -->
+
                 <li><a href="#">Contato</a></li>
+                <!-- Item do menu Contato -->
+
             </ul>
         </nav>
 
         <div class="acoes">
+            <!-- Agrupa os links de ação do usuário -->
+
             <a href="#">Entrar</a>
+            <!-- Link para entrar no sistema -->
+
             <a href="#">Cadastrar-se</a>
+            <!-- Link para realizar um cadastro -->
+
         </div>
+
     </header>
 
 </body>
