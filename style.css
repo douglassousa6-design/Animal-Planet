@@ -21,7 +21,6 @@ body {
     background-color: var(--cor-fundo);
 }
 
-/*cabeçalho*/
 header {
     position: sticky;
     top: 0;
@@ -36,28 +35,26 @@ header {
 }
 
 .header-inner {
-    max-width: 1200px; /* O conteúdo não ultrapassa 1200px de largura */
-    margin: 0 auto; /* margem 0 em cima/baixo e "auto" nas laterais */
-    padding: 0 24px; /* espaço interno: 0 em cima/baixo e 24px nas laterais */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 
-    /* Aplicação do Flexbox */
+    display: flex;
 
-    display: flex; /* Transforma essa div em um "container flexivel". Isso é o que permite colocar logo, menu e botões um do lado do outro */
+    align-items: center;
 
-    align-items: center; /* Alinha os itens no CENTRO verticalmente dentro do header */
+    justify-content: space-between;
 
-    justify-content: space-between; /* Distribui os itens: o primeiro cola na esquerda, o último cola na direita, e sobra espaço entre eles */
-
-    gap: 24px; /* Espaço mínimo entre os itens (logo, menu e botões) */
+    gap: 24px;
 }
 
-.logo { 
+.logo {
     align-items: center;
     display: block;
 }
 
 .logo img {
-    width: 200px;
+    width: 500px;
 }
 
 .nome-projeto h1 {
@@ -76,8 +73,8 @@ nav ul {
     color: var(--texto-principal);
     text-decoration: none;
     font-size: 14px;
-    white-space: nowrap; 
-    transition: color .2s ease; 
+    white-space: nowrap;
+    transition: color .2s ease;
 }
 
 nav a:hover {
@@ -110,7 +107,8 @@ nav a:hover {
     border: 1px solid var(--verde);
 }
 
-/* Menu Hambúrguer */
+
+/* MENU HAMBÚRGUER */
 
 .menu-hamburguer {
     display: none;
@@ -121,23 +119,27 @@ nav a:hover {
     cursor: pointer;
 }
 
+
+/* RESPONSIVIDADE */
+
 @media (max-width: 768px) {
+
     .menu-hamburguer {
         display: block;
     }
 
     nav {
         display: none;
-    }
-
-    nav.active {
-        display: block;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background-color: var(--cor-fundo);
         border-bottom: 1px solid var(--cor-borda);
+    }
+
+    nav.active {
+        display: block;
     }
 
     nav.active ul {
