@@ -1,37 +1,43 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Animal Planet</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Fonte do projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Biblioteca de ícones do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
 </head>
 
 <body>
+
+    <!-- =====================================
+         HEADER - CABEÇALHO ORIGINAL
+    ====================================== -->
 
     <header>
 
         <div class="logo">
 
             <a href="#">
-
                 <img src=".//assets/logo.png" alt="Logo do Animal Planet">
-
             </a>
 
         </div>
 
         <div class="nome-projeto">
-
         </div>
 
+        <!-- Botão do menu hamburguer -->
         <button class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir menu">
             ☰
         </button>
@@ -65,6 +71,159 @@
         </nav>
 
     </header>
+
+
+    <!-- =====================================
+         HERO - ANIMAL PLANET
+         Apresentação principal do projeto
+    ====================================== -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <!-- Organização das duas colunas -->
+            <div class="hero-inner">
+
+
+                <!-- COLUNA DA ESQUERDA: TEXTOS E BOTÕES -->
+
+                <div class="hero-texto">
+
+                    <!-- Etiqueta superior -->
+                    <span class="hero-etiqueta">
+                        Sistema para Gestão Veterinária
+                    </span>
+
+
+                    <!-- Título principal -->
+                    <h1 class="hero-titulo">
+
+                        Cuidado animal com gestão
+
+                        <span>inteligente</span>
+
+                    </h1>
+
+
+                    <!-- Descrição do projeto -->
+                    <p class="hero-descricao">
+
+                        Organize sua clínica veterinária, gerencie
+                        atendimentos e acompanhe os cuidados dos
+                        seus pacientes em um só lugar.
+
+                    </p>
+
+
+                    <!-- Botões principais -->
+                    <div class="hero-botoes">
+
+                        <a href="#" class="btn btn-primario btn-grande">
+
+                            Começar agora
+
+                        </a>
+
+
+                        <a href="#recursos" class="btn btn-contorno btn-grande">
+
+                            <span class="material-symbols-outlined">
+                                play_arrow
+                            </span>
+
+                            Conhecer recursos
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Lista com as três vantagens do projeto -->
+                    <ul class="hero-vantagens">
+
+
+                        <!-- Primeira vantagem -->
+                        <li>
+
+                            <span class="material-symbols-outlined">
+                                pets
+                            </span>
+
+                            <p>
+
+                                <strong>Organização</strong>
+
+                                Gestão dos pacientes
+
+                            </p>
+
+                        </li>
+
+
+                        <!-- Segunda vantagem -->
+                        <li>
+
+                            <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+
+                            <p>
+
+                                <strong>Praticidade</strong>
+
+                                Controle de consultas
+
+                            </p>
+
+                        </li>
+
+
+                        <!-- Terceira vantagem -->
+                        <li>
+
+                            <span class="material-symbols-outlined">
+                                health_and_safety
+                            </span>
+
+                            <p>
+
+                                <strong>Segurança</strong>
+
+                                Cuidado e eficiência
+
+                            </p>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+                <!-- COLUNA DA DIREITA: IMAGEM DO PROJETO -->
+
+                <img
+
+                    src="assets/WhatsApp Image 2026-11-10 at 4.35.32 PM.jpeg"
+
+                    alt="Veterinário do Animal Planet, sistema de gestão para clínicas veterinárias, com símbolos de um cachorro e um gato."
+
+                    class="hero-imagem"
+
+                >
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         JAVASCRIPT - MENU HAMBURGUER ORIGINAL
+    ====================================== -->
 
     <script>
 
